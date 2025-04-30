@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+    background-color: #f0f2f5;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    background: rgb(130, 106, 251);
+}
+.form-container {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+.form-container h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 500;
+    color: #333;
+    font-size: 1.5em;
+}
+.form-group {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.form-group:last-of-type {
+    border-bottom: none;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-top: 20px;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 14px 12px 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+.input-wrapper label {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    color: #777;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+}
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 18px;
+    background: white;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #673ab7;
+}
+select, .gender-options label {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+select:focus {
+    outline: none;
+    border-color: #673ab7;
+    background-color: #ffffff;
+}
+.gender-options {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: linear-gradient(120deg, #673ab7, #512da8);
+    background-size: 200% 200%;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+    background-position: right center;
+    background-color: #5e35b1;
+    transform: translateY(-2px);
+}
+
